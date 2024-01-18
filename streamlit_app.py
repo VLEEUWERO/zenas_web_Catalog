@@ -1,4 +1,5 @@
 import streamlit as st
+import snowflake.connector
 
 #st.header with "Zena's Amazing Athleisure Catalog"
 #Pick a sweatsuit solor or style:

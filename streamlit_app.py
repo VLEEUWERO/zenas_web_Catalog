@@ -23,12 +23,12 @@ my_cur.execute("select color_or_style from catalog_for_website")
 my_catalog = my_cur.fetchall()
 # put the dafta into a dataframe
 df = pd.DataFrame(my_catalog)
-# temp write the dataframe to the page so I Can see what I am working with
-st.text('write the dataframe to the page so I Can see what I am working with')
-st.write(df)
+# # temp write the dataframe to the page so I Can see what I am working with
+# st.text('write the dataframe to the page so I Can see what I am working with')
+# st.write(df)
 # put the first column into a list
 color_list = df[0].values.tolist()
-st.text(print(color_list))
+print(color_list)
 
     #st. single pick Color/Style
 # Let's put a pick list here so they can pick the color
